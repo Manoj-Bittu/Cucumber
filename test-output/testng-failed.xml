@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Chrome_Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testRunners.End2EndRunner">
+        <methods>
+          <include name="setUp"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- testRunners.End2EndRunner -->
+    </classes>
+  </test> <!-- Chrome_Test(failed) -->
+  <test thread-count="5" name="FireFox_Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testRunners.End2EndRunner">
+        <methods>
+          <include name="setUp"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
+          <include name="setUpClass"/>
+        </methods>
+      </class> <!-- testRunners.End2EndRunner -->
+    </classes>
+  </test> <!-- FireFox_Test(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
